@@ -86,7 +86,7 @@ $(function () {
 				}
 				break;
 			default:
-				console.log('esx_scoreboard: unknown action!');
+				console.log('yrp_scoreboard: unknown action!');
 				break;
 		}
 	}, false);

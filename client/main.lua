@@ -35,7 +35,7 @@ Citizen.CreateThread(function()
     end
 
 	Citizen.Wait(128)
-	ESX.TriggerServerCallback('esx_scoreboard:getConnectedPlayers', function(connectedPlayers)
+	ESX.TriggerServerCallback('yrp_scoreboard:getConnectedPlayers', function(connectedPlayers)
 		UpdatePlayerTable(connectedPlayers)
 	end)
 end)
@@ -74,21 +74,21 @@ Citizen.CreateThread(function()
 	end
 end)
 
-RegisterNetEvent('esx_scoreboard:updateConnectedPlayers')
-AddEventHandler('esx_scoreboard:updateConnectedPlayers', function(connectedPlayers)
+RegisterNetEvent('yrp_scoreboard:updateConnectedPlayers')
+AddEventHandler('yrp_scoreboard:updateConnectedPlayers', function(connectedPlayers)
 	UpdatePlayerTable(connectedPlayers)
 end)
 
-RegisterNetEvent('esx_scoreboard:updatePing')
-AddEventHandler('esx_scoreboard:updatePing', function(connectedPlayers)
+RegisterNetEvent('yrp_scoreboard:updatePing')
+AddEventHandler('yrp_scoreboard:updatePing', function(connectedPlayers)
 	SendNUIMessage({
 		action  = 'updatePing',
 		players = connectedPlayers
 	})
 end)
 
-RegisterNetEvent('esx_scoreboard:toggleID')
-AddEventHandler('esx_scoreboard:toggleID', function(state)
+RegisterNetEvent('yrp_scoreboard:toggleID')
+AddEventHandler('yrp_scoreboard:toggleID', function(state)
 	if state then
 		idVisable = state
 	else

@@ -12,7 +12,7 @@ Config = {}
 
 Config.general_config_settings = {
 	--es_extended
-	es_extended       = 'esx:getSharedObject', -- default -> esx:getSharedObject
+	es_extended       = 'hsuiwsdSAD587:479582sqeqesd_dbcuwq', -- default -> esx:getSharedObject
 	--general
 	job_grade_players = true, -- true if you want to show job name, grade and ooc name
 	--Active players
