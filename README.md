@@ -1,18 +1,21 @@
-# esx_scoreboard
+# yrp_scoreboard
 
 An ESX scoreboard based off the Stadus_Scoreboard resource.
 
-![Preview image](https://i.imgur.com/z3UXs6K.jpg)
+![Preview image](https://media.discordapp.net/attachments/777726287933865985/778068159181094932/unknown.png?width=1356&height=763)
 
 ## Features
 
+- Animated background
+- Job and job grade label
+- Visual update active jobs
+- Webhook
+- Easy config
+- Retextured esx_scoreboard
+- Uptime
 - Light on performance
 - See all players ping, which is colored
-- Press F9 to open the scoreboard by default
-
-## Getting uptime to work
-
-Properly install the [uptime](https://forum.fivem.net/t/release-show-uptime-in-server-list/162956) thing by Hawaii. If you don't want it then you can remove its code.
+- Press "DELETE" to open the scoreboard by default
 
 ## Getting players in queue to work
 
