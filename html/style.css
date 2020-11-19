@@ -190,10 +190,7 @@ tr.heading {
 	height: 45px;
 	border-bottom-left-radius: 22px;
 	border-bottom-right-radius: 22px;
-	border-top: 0.5rem outset rgb(224, 135, 18,.8);
-	border-left: 0.5rem outset rgb(224, 135, 18,.8);
-	border-right: 0.5rem outset rgb(224, 135, 18,.8);
-	border-bottom: 0.5rem outset rgb(224, 135, 18,.8);
+	border: 0.5rem outset rgb(224, 135, 18,.8);
 }
 
 .illegal_actions h2 {
