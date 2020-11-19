@@ -197,9 +197,9 @@ function UpdatePlayerTable(connectedPlayers)
 
 		if Config.general_config_settings.illegal_actions then
 			if v.job == 'police' then
-				text = '<div class="illegal_actions"><h2> illegal actions is <i class="fas fa-check-circle"></i> </h2></div>'
+				text = '<div class="illegal_actions"><h2> illegal actions are <i class="fas fa-check-circle"></i> </h2></div>'
 			else
-				text = '<div class="illegal_actions"><h2> illegal actions is <i class="fas fa-times-circle"></i> </h2></div>'
+				text = '<div class="illegal_actions"><h2> illegal actions are <i class="fas fa-times-circle"></i> </h2></div>'
 			end
 		end
 
