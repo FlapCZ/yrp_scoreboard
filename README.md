@@ -2,7 +2,16 @@
 
 An yrp_scoreboard based off the Stadus_Scoreboard resource.
 
-![Preview image](https://media.discordapp.net/attachments/777726287933865985/778068159181094932/unknown.png?width=1356&height=763)
+## Preview
+
+- If there is a police officer on the server ( illegal actions allowed )
+![Preview image](https://cdn.discordapp.com/attachments/750699405073711126/778902591928270859/unknown.png)
+
+- If there is no police officer on the server ( illegal actions are prohibited )
+![Preview image](https://cdn.discordapp.com/attachments/750699405073711126/778902807365156894/unknown.png)
+
+- Simple config ( option to turn off the "parts" of the scoreboard )
+![Preview image](https://cdn.discordapp.com/attachments/750699405073711126/778902901783134229/unknown.png)
 
 ## Features
 
