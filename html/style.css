@@ -1,0 +1,267 @@
+html {
+	color: #0080ff;
+	font-family: 'Arial Narrow';
+}
+
+#wrap {
+
+	width: 52vw;
+	min-height: 135px;
+	margin-top: 2.5%;
+	margin-left: auto;
+	margin-right: auto;
+	animation: pulse 800ms reverse;
+	background-size: 900% 900%;
+	box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.5), 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+	color: rgba(255, 255, 255, 0.9);
+	border-radius: 22px;
+	background-color: rgb(224, 135, 18,.8);
+}
+
+.rain {
+	width: 52vw;
+	min-height: 135px;
+	margin-top: 2.5%;
+	margin-left: auto;
+	margin-right: auto;
+	background-size: 900% 900%;
+	border-radius: 22px;
+	background: url(https://cdn.discordapp.com/attachments/750699405073711126/778055274169630740/rain.png);
+	animation: rain 0.8s linear infinite;
+}
+
+p {
+	float: left;
+	margin-left: 30px;
+	padding-left: 5px;
+	font-size: 1.00vw;
+}
+
+.header {
+	font-family: 'Arial Narrow';
+	height: 35px;
+	width: auto;
+	padding-left: 0px;
+	padding-right: 0px;
+	border-top-left-radius: 0px 0px;
+	border-top-right-radius: 0px 0px;
+}
+
+.jobs {
+	position: absolute;
+	color: rgba(145, 255, 0, 0.5);
+	border: 3px solid rgba(145, 255, 0, 0.5);
+    width: 50px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.35);
+	font-size: 27px;
+	text-align: center;
+	padding-top: 10px;
+	animation: jobactive 1.5s linear infinite;
+}
+
+.jobs.pd{
+    bottom: 81%;
+	right: 55%;
+}
+
+.jobs.ems{
+    bottom: 81%;
+    right: 51.5%;
+}
+
+.jobs.mech{
+    bottom: 81%;
+    right: 48%;
+}
+
+.jobs.taxi{
+    bottom: 81%;
+    right: 44.5%;
+}
+
+.jobs.miner{
+    bottom: 81%;
+    right: 41%;
+}
+
+.jobs.farmer{
+    bottom: 81%;
+    right: 37.5%;
+}
+
+.jobs.fisherman{
+    bottom: 81%;
+    right: 58.5%;
+}
+
+.jobs.trucker{
+    bottom: 81%;
+    right: 62%;
+}
+
+.jobsisnotonline{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 3px solid rgba(0, 0, 0, 0.5);
+	font-size: 27px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.jobsisnotonline.pd{
+    bottom: 81%;
+    right: 55%;
+}
+
+.jobsisnotonline.ems{
+    bottom: 81%;
+    right: 51.5%;
+}
+
+.jobsisnotonline.mech{
+    bottom: 81%;
+    right: 48%;
+}
+
+.jobsisnotonline.taxi{
+    bottom: 81%;
+    right: 44.5%;
+}
+
+.jobsisnotonline.miner{
+    bottom: 81%;
+    right: 41%;
+}
+
+.jobsisnotonline.farmer{
+    bottom: 81%;
+    right: 37.5%;
+}
+
+.jobsisnotonline.fisherman{
+    bottom: 81%;
+    right: 58.5%;
+}
+
+.jobsisnotonline.trucker{
+    bottom: 81%;
+    right: 62%;
+}
+
+.jobs p {
+	font-family: 'sans-serif';
+	text-align: center;
+}
+
+table {
+	text-align: left;
+	color: white;
+	background: rgba(19, 12, 2, 0.9);
+	border-top: 0.5rem outset rgb(224, 135, 18,.8);
+	border-left: 0.5rem outset rgb(224, 135, 18,.8);
+	border-right: 0.5rem outset rgb(224, 135, 18,.8);
+}
+
+th, td {
+	padding-left: 25px;
+}
+
+th {
+	padding-top: 0px;
+	height: 30px;
+}
+
+tr {
+	font-size: 0.59vw;
+	font-family: 'Arial Narrow';
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+tr.heading {
+	font-size: 0.59vw;
+	color: rgb(255, 247, 247);
+}
+
+.nadpis {
+	text-align: center;
+	background: url(https://cdn.discordapp.com/attachments/750699405073711126/770969920133005312/gta-5-city-lights-4k-xz-2560x1440.jpg);
+	height: 100px;
+}
+
+.illegal_actions {
+	text-align: center;
+	height: 35px;
+	border-bottom-left-radius: 22px;
+	border-bottom-right-radius: 22px;
+}
+
+.serverinfo {
+	font-size: 0.50vw;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'sans-serif';
+	animation: pulse 800ms infinite;
+	text-align: center;
+}
+
+.yrpinfo {
+	border-bottom: 0.5rem outset rgb(224, 135, 18,.8);
+	border-left: 0.5rem outset rgb(224, 135, 18,.8);
+	border-right: 0.5rem outset rgb(224, 135, 18,.8);
+	background: rgba(19, 12, 2, 0.9);
+}
+
+@keyframes pulse {
+	0% 
+	{ 
+		transform: scale(1.0);    
+	}
+	20% 
+	{ 
+		transform: scale(1.05); 
+	}
+	100% 
+	{ 
+		transform: scale(1.0);  
+	}
+  }
+
+  @keyframes rain
+  {
+	  0%
+	  {
+		  background-position: 0 0;
+	  }
+
+	  100%
+	  {
+		  background-position: 20% 100%;
+	  }
+
+  }
+
+  @keyframes jobactive
+  {
+	  0%
+	  {
+		color: rgba(145, 255, 0, 0.5);
+		border: 3px solid rgba(145, 255, 0, 0.5);
+	  }
+
+	  50%
+	  {
+		color: rgba(51, 83, 8, 0.5);
+		border: 3px solid rgba(51, 83, 8, 0.5);
+	  }
+
+	  100%
+	  {
+		color: rgba(145, 255, 0, 0.5);
+		border: 3px solid rgba(145, 255, 0, 0.5);
+	  }
+
+  }
