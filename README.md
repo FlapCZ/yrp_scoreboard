@@ -5,7 +5,7 @@ An yrp_scoreboard based off the Stadus_Scoreboard resource.
 ## Preview
 
 - Video
-![Preview image](https://streamable.com/ui5dg5)
+![Video](https://streamable.com/ui5dg5)
 
 - If there is a police officer on the server ( illegal actions allowed )
 ![Preview image](https://cdn.discordapp.com/attachments/750699405073711126/778902591928270859/unknown.png)
