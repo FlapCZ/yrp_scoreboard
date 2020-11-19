@@ -1,6 +1,6 @@
 # yrp_scoreboard
 
-An ESX scoreboard based off the Stadus_Scoreboard resource.
+An yrp_scoreboard based off the Stadus_Scoreboard resource.
 
 ![Preview image](https://media.discordapp.net/attachments/777726287933865985/778068159181094932/unknown.png?width=1356&height=763)
 
@@ -9,6 +9,7 @@ An ESX scoreboard based off the Stadus_Scoreboard resource.
 - Animated background
 - Job and job grade label
 - Visual update active jobs
+- illegal actions
 - Webhook
 - Easy config
 - Retextured esx_scoreboard
