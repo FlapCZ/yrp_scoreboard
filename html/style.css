@@ -19,13 +19,6 @@ html {
 }
 
 .rain {
-	width: 52vw;
-	min-height: 135px;
-	margin-top: 2.5%;
-	margin-left: auto;
-	margin-right: auto;
-	background-size: 900% 900%;
-	border-radius: 22px;
 	background: url(https://cdn.discordapp.com/attachments/750699405073711126/778055274169630740/rain.png);
 	animation: rain 0.8s linear infinite;
 }
@@ -194,9 +187,17 @@ tr.heading {
 
 .illegal_actions {
 	text-align: center;
-	height: 35px;
+	height: 45px;
 	border-bottom-left-radius: 22px;
 	border-bottom-right-radius: 22px;
+	border-top: 0.5rem outset rgb(224, 135, 18,.8);
+	border-left: 0.5rem outset rgb(224, 135, 18,.8);
+	border-right: 0.5rem outset rgb(224, 135, 18,.8);
+	border-bottom: 0.5rem outset rgb(224, 135, 18,.8);
+}
+
+.illegal_actions h2 {
+	margin-top: 10px;
 }
 
 .serverinfo {
