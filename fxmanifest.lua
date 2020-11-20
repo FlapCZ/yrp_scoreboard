@@ -1,3 +1,6 @@
+fx_version 'adamant'
+game 'gta5'
+
 ------------------------------------------------------------
 --------------------- yrp_scoreboard -----------------------
 ------------------------------------------------------------
@@ -8,7 +11,6 @@
 ----- Regular updates and lots of interesting scripts ------
 --------- discord -> https://discord.gg/hqZEXc8FSE ---------
 ------------------------------------------------------------
-resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
 
 description 'YourRolePlay Development Scoreboard'
 author 'YourRolePlay Development // discord -> https://discord.gg/uSv9sWwhE9'
