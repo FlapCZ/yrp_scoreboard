@@ -41,6 +41,18 @@ Citizen.CreateThread(function()
 	end
 end)
 
+RegisterServerEvent('yrp_hud:retrieveData')
+AddEventHandler('yrp_hud:retrieveData', function()
+	local xPlayer = ESX.GetPlayerFromId(source)
+
+	if xPlayer ~= nil then
+		local jobName = ' Your job: ' ..xPlayer.job.name
+		local jobGrade = '<span style="font-size: 0.7vw"> | </span> Your job grade: ' ..xPlayer.job.grade_name.. ' <span style="font-size: 0.7vw"> | </span>'
+		local name = '<span style="font-size: 0.7vw"> | </span>Your name: ' ..xPlayer.getName()
+	  TriggerClientEvent('yrp_scoreboard:retrieveData', source, {name = name, jobName = jobName, jobGrade = jobGrade})
+	end
+end)
+
 AddEventHandler('onResourceStart', function(resource)
 	if resource == GetCurrentResourceName() then
 		Citizen.CreateThread(function()

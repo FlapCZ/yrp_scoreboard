@@ -22,7 +22,6 @@ local Keys = {
 
 local idVisable = true
 ESX = nil
-local PlayerData = nil
 
 Citizen.CreateThread(function()
 	while ESX == nil do
@@ -30,24 +29,24 @@ Citizen.CreateThread(function()
 		Citizen.Wait(10)
 	end
 
-	if PlayerData == nil or PlayerData.job == nil then
-		PlayerData = ESX.GetPlayerData()
-    end
-
 	Citizen.Wait(128)
 	ESX.TriggerServerCallback('yrp_scoreboard:getConnectedPlayers', function(connectedPlayers)
 		UpdatePlayerTable(connectedPlayers)
 	end)
 end)
 
-RegisterNetEvent('esx:playerLoaded')
-AddEventHandler('esx:playerLoaded', function(xPlayer)
-  PlayerData = xPlayer
-end)
+RegisterNetEvent('yrp_scoreboard:retrieveData')
+AddEventHandler('yrp_scoreboard:retrieveData', function(data)
 
-RegisterNetEvent('esx:setJob')
-AddEventHandler('esx:setJob', function(job)
-	PlayerData.job = job
+	if Config.general_config_settings.job_grade_players then
+		SendNUIMessage({
+			action = 'updateJobGradeAndName',
+
+			name = data.name,
+			jobName = data.jobName,
+			jobGrade = data.jobGrade
+		})
+	end
 end)
 
 
@@ -63,15 +62,7 @@ Citizen.CreateThread(function()
 		playTime = '00h 00m',
 	})
 
-	if Config.general_config_settings.job_grade_players then
-		SendNUIMessage({
-			action = 'updateJobGradeAndName',
-
-			name = '<span style="font-size: 0.7vw"> | </span>Your name: ' ..GetPlayerName(playerId),
-			jobName = ' Your job: ' ..PlayerData.job.label,
-			jobGrade = '<span style="font-size: 0.7vw"> | </span> Your job grade: ' ..PlayerData.job.grade_label.. ' <span style="font-size: 0.7vw"> | </span>'
-		})
-	end
+	TriggerServerEvent('yrp_scoreboard:retrieveData')
 end)
 
 RegisterNetEvent('yrp_scoreboard:updateConnectedPlayers')
