@@ -21,6 +21,8 @@ html {
 .rain {
 	background: url(https://cdn.discordapp.com/attachments/750699405073711126/778055274169630740/rain.png);
 	animation: rain 0.8s linear infinite;
+	border-bottom-left-radius: 22px;
+	border-bottom-right-radius: 22px;
 }
 
 p {
